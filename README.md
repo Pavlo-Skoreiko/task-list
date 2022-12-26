@@ -1,6 +1,14 @@
 # Task-list
 
 ## Description:
+This is my third website project. The "task list" application is designed to create and edit a to-do list.
+
+In my website I used this technologies:
+
+- HTML
+- CSS
+- Java Script
+- BEM
 
 https://pavlo-skoreiko.github.io/task-list/
 
