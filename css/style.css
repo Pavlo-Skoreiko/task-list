@@ -9,5 +9,12 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(0, 1%, 79%);
+    word-break: break-word;
+}
+
+.header {
+    margin: 10px;
 }

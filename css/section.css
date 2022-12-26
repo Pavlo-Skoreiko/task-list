@@ -1,0 +1,50 @@
+.section {
+  background-color: hsl(0, 0%, 100%);
+  margin: 10px;
+}
+
+.section__content {
+  padding: 20px;
+  border-top: 1px solid hsl(0, 0%, 87%);
+}
+
+.section__title {
+  padding: 20px;
+  margin: 0;
+}
+
+.section__input {
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 87%);
+}
+
+.section__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+
+.section__addButton {
+  background-color: hsl(180, 100%, 25%);
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.section__addButton:hover {
+  background-color: hsl(180, 100%, 30%);
+}
+
+.section__addButton:active {
+  background-color: hsl(180, 100%, 35%);
+}
+
+.section__note {
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .section__form {
+      grid-template-columns: 1fr;
+  }
+}

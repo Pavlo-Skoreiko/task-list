@@ -1,0 +1,46 @@
+.note {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.note__taskName {
+    word-break: break-word;
+}
+
+.note__taskName--done {
+    text-decoration: line-through;
+}
+
+.note__button {
+    height: 30px;
+    width: 30px;
+    background-color: hsl(348, 83%, 47%);
+    color: white;
+    border: none;
+}
+
+.note__button:hover {
+    background-color: hsl(348, 83%, 57%);
+}
+
+.note__button:active {
+    background-color: hsl(348, 83%, 67%);
+    border: 1px solid hsl(348, 92%, 15%);
+}
+
+.note__button--done {
+    background-color: hsl(120, 100%, 20%);
+}
+
+.note__button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.note__button--done:active {
+    background-color: hsl(120, 100%, 40%);
+    border: 1px solid hsl(120, 95%, 8%);
+}
