@@ -44,10 +44,10 @@
       htmlString += `
       <li class="note">
           <button class="note__button note__button--done js-done">
-          ${task.done ? "✔" : ""}
+              ${task.done ? "✔" : ""}
           </button>
           <span class="note__taskName${task.done ? " note__taskName--done" : ""}">
-          ${task.content}
+              ${task.content}
           </span>
           <button class="note__button js-remove">
           🗑
