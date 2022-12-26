@@ -21,6 +21,7 @@
     background-color: hsl(348, 83%, 47%);
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .note__button:hover {
