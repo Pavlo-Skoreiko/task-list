@@ -45,3 +45,7 @@
     background-color: hsl(120, 100%, 40%);
     border: 1px solid hsl(120, 95%, 8%);
 }
+
+.js-note__hideShowDoneTask {
+    display: none;
+}
