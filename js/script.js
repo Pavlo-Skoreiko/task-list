@@ -98,10 +98,10 @@
     let htmlString = "";
     for (const task of tasks) {
       htmlString = `
-     <button class="js-hideShowDoneTasksButton">
+     <button class="note__buttons--list js-hideShowDoneTasksButton">
            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
      </button>
-     <button class="tasks__buttons js-markAllTasksDone" 
+     <button class="note__buttons--list js-markAllTasksDone" 
            ${tasks.every(({ done }) => done) ? "disabled" : ""}>
      Ukończ wszystkie
      </button>

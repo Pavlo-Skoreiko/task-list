@@ -1,18 +1,25 @@
 .note {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.note__section {
+    border-top: 1px solid hsl(0, 0%, 87%);
+    margin: 0;
+    padding-left: 0;
+    padding: 20px;
 }
 
 .note__taskName {
-    word-break: break-word;
+  word-break: break-word;
 }
 
 .note__taskName--done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .note__button {
@@ -22,30 +29,47 @@
     color: white;
     border: none;
     cursor: pointer;
-}
-
-.note__button:hover {
+  }
+  
+  .note__button:hover {
     background-color: hsl(348, 83%, 57%);
-}
-
-.note__button:active {
+  }
+  
+  .note__button:active {
     background-color: hsl(348, 83%, 67%);
     border: 1px solid hsl(348, 92%, 15%);
-}
-
-.note__button--done {
+  }
+  
+  .note__button--done {
     background-color: hsl(120, 100%, 20%);
-}
-
-.note__button--done:hover {
+  }
+  
+  .note__button--done:hover {
     background-color: hsl(120, 100%, 30%);
-}
-
-.note__button--done:active {
+  }
+  
+  .note__button--done:active {
     background-color: hsl(120, 100%, 40%);
     border: 1px solid hsl(120, 95%, 8%);
-}
+  }
 
 .js-note__hideShowDoneTask {
-    display: none;
+  display: none;
+}
+
+.note__buttons--list {
+    border: none;
+    color: hsl(180, 100%, 25%) ;
+    background-color: white;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+
+.note__buttons--list:hover {
+    color: hsl(180, 67%, 41%) ;
+}
+
+.note__buttons--list:disabled {
+    color: rgb(170, 167, 167);
 }

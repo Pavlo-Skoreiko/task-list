@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista-zadań</title>
-    <link rel="icon" href="../task-list/images/201.ico">
-    <meta property="og:image" content="../task-list/images/pavlo.github.io.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/section.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
-    <link href="css/note.css" rel="stylesheet">
+    <link rel="icon" href="../task-list/images/201.ico" />
+    <meta
+      property="og:image"
+      content="../task-list/images/pavlo.github.io.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/container.css" rel="stylesheet" />
+    <link href="css/note.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <main class="container">
-        <header class="header">
-            <h1>Lista zadań</h1>
-        </header>
-        <section class="section">
-            <h2 class="section__title">Dodaj nowe zadanie</h2>
-            <div class="section__content">
-                <form class="section__form js-form">
-                    <input class="section__input js-newTask" placeholder="Co jest do zrobienia?">
-                    <button class="section__addButton">Dodaj zadanie</button>
-                </form>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__title">Lista zadań</h2>
-            <div class="section__content">
-                <ul class="section__note js-tasks"></ul>
-            </div>
-        </section>
+      <header class="header">
+        <h1>Lista zadań</h1>
+      </header>
+      <section class="section">
+        <h2 class="section__title">Dodaj nowe zadanie</h2>
+        <form class="form js-form">
+          <input
+            class="form__input js-newTask"
+            placeholder="Co jest do zrobienia?"/>
+          <button class="form__addButton">Dodaj zadanie</button>
+        </form>
+      </section>
+      <section class="section">
+        <div class="section__list">
+          <h2 class="section__title">Lista zadań</h2>
+          <div class="section__list--button js-tasklist"></div>
+        </div>
+        <ul class="note__section js-tasks"></ul>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
