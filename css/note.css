@@ -26,30 +26,36 @@
     height: 30px;
     width: 30px;
     background-color: hsl(348, 83%, 47%);
+    transition: 1s;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   .note__button:hover {
+    transition: background 1s;
     background-color: hsl(348, 83%, 57%);
   }
   
   .note__button:active {
     background-color: hsl(348, 83%, 67%);
+    transition: 1s;
     border: 1px solid hsl(348, 92%, 15%);
   }
   
   .note__button--done {
+    transition: 1s;
     background-color: hsl(120, 100%, 20%);
   }
   
   .note__button--done:hover {
+    transition: background 1s;
     background-color: hsl(120, 100%, 30%);
   }
   
   .note__button--done:active {
     background-color: hsl(120, 100%, 40%);
+    transition: 1s;
     border: 1px solid hsl(120, 95%, 8%);
   }
 
@@ -60,6 +66,7 @@
 .note__buttons--list {
     border: none;
     color: hsl(180, 100%, 25%) ;
+    transition: 1.5s;
     background-color: white;
     cursor: pointer;
     margin: 20px;
@@ -67,9 +74,10 @@
 }
 
 .note__buttons--list:hover {
+    transition: color 1.5s;
     color: hsl(180, 67%, 41%) ;
 }
 
 .note__buttons--list:disabled {
-    color: rgb(170, 167, 167);
+    color: rgb(184, 181, 181);
 }
