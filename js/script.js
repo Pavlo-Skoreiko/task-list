@@ -96,7 +96,7 @@
 
   const renderButtons = () => {
     let htmlString = "";
-    for (const task of tasks) {
+    if (tasks.length > 0) {
       htmlString = `
      <button class="note__buttons--list js-hideShowDoneTasksButton">
            ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
